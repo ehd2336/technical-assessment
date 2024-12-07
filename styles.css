@@ -1,0 +1,816 @@
+*{
+    margin: 0;
+    padding: 0;
+    p{
+        font-family: Helvetica, Arial;
+    }
+    h1, h2, h3, h4, h5, h6{
+       font-family: Roboto Slab;
+    }
+    .h2OurService, .h2HelpfulHeating, .linkServiceArea, .linkServiceArea2, .linkFurnaces, .linkHeat, .linkValue{
+        color: #ab3c3c;
+    }
+}
+
+
+/* media queries  mobile */ 
+
+@media (max-width: 768px) {
+
+
+/* hamburger menu styles */
+header .headerMobile{
+    font-size: 25px;
+}
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .bar {
+    height: 3px;
+    background-color: #314b57;
+    border-radius: 2px;
+  }
+  
+  /* menu styles */
+  .menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; 
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #314b57;
+  }
+  
+  .menu-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Mostrar el menú cuando el checkbox está marcado */
+  #menu-toggle:checked ~ .menu-items {
+    display: block;
+  }
+  
+  /* Ocultar el checkbox */
+  #menu-toggle {
+    display: none;
+  }
+
+#maxContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    #menu{
+        display: none;
+    }
+}
+
+#maxContainerMain{
+    display: flex;
+    flex-direction: column;
+
+    #divServiceArea{
+        .h2OurService{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .imgServiceArea{
+            width: 100%;
+        }
+        .textServiceArea{
+            margin-bottom: 10px;
+        }
+    }
+
+    #helpfulArea{
+        img{
+            width: 100%;
+        }
+        .h2HelpfulHeating{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .textValue, .textHeat, .textFurnaces{
+            margin-bottom: 5px;
+        }
+        .imgHeat, .imgFurnaces{
+            margin-top: 50px;
+        }
+    }
+}
+  
+
+}
+
+/* mq for tablets */ 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header .headerMobile{
+        font-size: 25px;
+    }
+    .menu-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .bar {
+        height: 3px;
+        background-color: #314b57;
+        border-radius: 2px;
+      }
+      
+      /* Estilos para el menú */
+      .menu-items {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none; /* Oculta el menú por defecto */
+        position: absolute;
+         /* Ajusta según la altura de tu header */
+        left: 0;
+        width: 100%;
+        background-color: #314b57;
+      }
+      
+      .menu-items li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      .menu-items a {
+        text-decoration: none;
+        color: white;
+      }
+      
+      /* show the menu when checkbox it's clicked */
+      #menu-toggle:checked ~ .menu-items {
+        display: block;
+      }
+      
+      /* hide checkbox */
+      #menu-toggle {
+        display: none;
+      }
+
+    #maxContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 20%;
+        padding-right: 20%;
+        #menu{
+            display: none;
+        }
+    }
+    
+    #maxContainerMain{
+        #divServiceArea{
+            .h2OurService{
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .imgServiceArea{
+                width: 100%;
+            }
+            .textServiceArea{
+                margin-bottom: 10px;
+            }
+        }
+    
+        #helpfulArea{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 100%;
+            }
+            .h2HelpfulHeating{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .textValue, .textHeat, .textFurnaces{
+                margin-bottom: 5px;
+            }
+            .imgHeat, .imgFurnaces{
+                margin-top: 10px;
+            }
+        }
+
+    
+}
+}
+
+
+/* laptops and small pc's */ 
+
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    header .headerMobile{
+        display: none;
+        
+    }
+
+
+    #maxContainer{
+        margin: 0 auto;
+        width: 100vw;
+    
+    }
+    nav{
+        display: none;
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: #314b57;
+       
+    
+    }
+    
+    #imageMap{
+        display: flex;
+    }
+    
+    .img01 {
+        width: 100%;
+        max-width: 35%; 
+        object-fit: cover; 
+    }
+    
+    
+    
+    
+    .titleAndElements{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .title{
+        font-size: 8px; 
+        text-decoration: bold;
+        color: white;
+        margin-bottom: 10px;
+        margin-top: 9px;
+    }
+    
+    .menuElements {
+        display: flex;
+        flex-direction: row; 
+        
+      }
+      
+      .menuElements a {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        margin: 10px;          
+        text-decoration: none;  
+        color: white;          
+        white-space: nowrap;
+        
+      }
+    
+     .menuElements img{
+        margin-bottom: 5px;
+        width: 100%;
+        height: auto;
+        
+     }
+    
+  
+     /* Grid - Our Services*/
+
+     #divServiceArea{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr ;
+        grid-template-areas:
+        "h2OurService h2OurService h2OurService"
+        "imgServiceArea textServiceArea textServiceArea"
+        "imgServiceArea linkServiceArea linkServiceArea"
+        "imgServiceArea linkServiceArea2 linkServiceArea2";
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-bottom: 100px;
+        justify-self: center;
+        margin: auto;
+        gap: 15px;
+        margin-bottom: 50px;
+     }
+    
+     .h2OurService{
+         grid-area: h2OurService;
+         font-size: 35px;
+         
+     }
+    
+     .imgServiceArea{
+        display: flex;
+        grid-area: imgServiceArea;
+        margin-right: 20px;
+        width: 100%;
+        
+     }
+     .textServiceArea{
+        grid-area: textServiceArea;
+        width: 95%; 
+     }
+     .linkServiceArea{
+        grid-area: linkServiceArea;
+        display: flex;
+        
+     }
+        
+    /* Grid 3 images */ 
+    
+    #helpfulArea{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  1fr;
+        grid-template-areas:
+        "h2HelpfulHeating h2HelpfulHeating h2HelpfulHeating"
+        "imgValue imgHeat imgFurnaces"
+        "textValue textHeat textFurnaces"
+        "linkValue linkHeat linkFurnaces" ;
+        gap: 15px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    
+    /* images */
+    
+    .imgValue, .imgHeat, .imgFurnaces{
+        width: 100%;
+    }
+    
+    .imgValue{
+        grid-area: imgValue;
+    }
+    
+    .imgHeat{
+        grid-area: imgHeat;
+    
+    }
+    
+    .imgFurnaces{
+        grid-area: imgFurnaces;
+    
+    }
+    
+    /* text */ 
+    .textHeat, .textFurnaces, .textValue{
+        width: 100%;
+    }
+    
+    .h2HelpfulHeating{
+        grid-area: h2HelpfulHeating;
+    }
+    
+    .textValue{
+        grid-area: textValue;
+    
+    }
+    
+    .textHeat{
+        grid-area: textHeat;
+    
+    }
+    
+    .textFurnaces{
+        grid-area: textFurnaces;
+    
+    }
+    
+    /* links*/ 
+    
+    .linkValue{
+        grid-area: linkValue;
+    }
+    
+    .linkHeat{
+        grid-area: linkHeat;
+    }
+    
+    .linkFurnaces{
+        grid-area: linkFurnaces;
+    }
+
+
+}
+
+@media (min-width: 1440px) {
+
+    header .headerMobile{
+        display: none;
+        
+    }
+
+
+#maxContainer{
+    margin: 0 auto;
+    width: 100vw;
+
+}
+nav{
+    display: none;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #314b57;
+
+}
+
+#imageMap{
+    display: flex;
+}
+
+.img01 {
+    width: 100%;
+    max-width: 35%; 
+    object-fit: cover; 
+}
+
+
+
+
+.titleAndElements{
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 8px; 
+    text-decoration: bold;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 9px;
+}
+
+.menuElements {
+    display: flex;
+    flex-direction: row;  
+    
+  }
+  
+  .menuElements a {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    margin: 10px;          
+    text-decoration: none;  
+    color: white;          
+    white-space: nowrap;
+   
+  }
+
+ .menuElements img{
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    
+ }
+
+ /* Grid - Our Services*/
+ 
+
+ #divServiceArea{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    "h2OurService h2OurService h2OurService"
+    "imgServiceArea textServiceArea textServiceArea"
+    "imgServiceArea linkServiceArea linkServiceArea"
+    "imgServiceArea linkServiceArea2 linkServiceArea2";
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 50px;
+    justify-self: center;
+    gap: 15px;
+ }
+
+ .h2OurService{
+     grid-area: h2OurService;
+     font-size: 35px;
+     
+ }
+
+ .imgServiceArea{
+    display: flex;
+    grid-area: imgServiceArea;
+    margin-right: 20px;
+    width: 100%;
+    
+ }
+ .textServiceArea{
+    grid-area: textServiceArea;
+    width: 100%; 
+ }
+ .linkServiceArea{
+    grid-area: linkServiceArea;
+    display: flex;
+    
+ }
+    
+/* Grid 3 images */ 
+
+#helpfulArea{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr;
+    grid-template-areas:
+    "h2HelpfulHeating h2HelpfulHeating h2HelpfulHeating"
+    "imgValue imgHeat imgFurnaces"
+    "textValue textHeat textFurnaces"
+    "linkValue linkHeat linkFurnaces" ;
+    gap: 15px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/* images */
+
+.imgValue, .imgHeat, .imgFurnaces{
+    width: 100%;
+}
+
+.imgValue{
+    grid-area: imgValue;
+}
+
+.imgHeat{
+    grid-area: imgHeat;
+
+}
+
+.imgFurnaces{
+    grid-area: imgFurnaces;
+
+}
+
+/* text */ 
+.textHeat, .textFurnaces, .textValue{
+    width: 100%;
+}
+
+.h2HelpfulHeating{
+    grid-area: h2HelpfulHeating;
+}
+
+.textValue{
+    grid-area: textValue;
+
+}
+
+.textHeat{
+    grid-area: textHeat;
+
+}
+
+.textFurnaces{
+    grid-area: textFurnaces;
+
+}
+
+/* links*/ 
+
+.linkValue{
+    grid-area: linkValue;
+}
+
+.linkHeat{
+    grid-area: linkHeat;
+}
+
+.linkFurnaces{
+    grid-area: linkFurnaces;
+}
+}
+
+
+/* mq 1920px */
+
+@media (min-width: 1920px) {
+
+    header .headerMobile{
+        display: none;
+        
+    }
+
+
+#maxContainer{
+    margin: 0 auto;
+    width: 100vw;
+
+}
+nav{
+    display: none;
+}
+#menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: #314b57;
+
+}
+
+#imageMap{
+    display: flex;
+}
+
+.img01 {
+    width: 100%;
+    max-width: 35%; 
+    object-fit: cover; 
+}
+
+
+
+
+.titleAndElements{
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 8px; 
+    text-decoration: bold;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 9px;
+}
+
+.menuElements {
+    display: flex;
+    flex-direction: row;  
+  }
+  
+  .menuElements a {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    margin: 10px;          
+    text-decoration: none;  
+    color: white;          
+    white-space: nowrap;
+   
+  }
+
+ .menuElements img{
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    
+ }
+
+ /* Grid - Our Services*/
+ 
+ 
+ #divServiceArea{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas:
+    "h2OurService h2OurService h2OurService"
+    "imgServiceArea textServiceArea textServiceArea"
+    "imgServiceArea linkServiceArea linkServiceArea"
+    "imgServiceArea linkServiceArea2 linkServiceArea2";
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 100px;
+    justify-self: center;
+    margin: auto;
+    gap: 15px;
+ }
+
+ .h2OurService{
+     grid-area: h2OurService;
+     font-size: 35px;
+     
+ }
+
+ .imgServiceArea{
+    display: flex;
+    grid-area: imgServiceArea;
+    margin-right: 20px;
+    width: 100%;
+    
+ }
+ .textServiceArea{
+    grid-area: textServiceArea;
+    width: 95%; 
+ }
+ .linkServiceArea{
+    grid-area: linkServiceArea;
+    display: flex;
+    
+ }
+    
+/* Grid 3 images */ 
+
+#helpfulArea{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr;
+    grid-template-areas:
+    "h2HelpfulHeating h2HelpfulHeating h2HelpfulHeating"
+    "imgValue imgHeat imgFurnaces"
+    "textValue textHeat textFurnaces"
+    "linkValue linkHeat linkFurnaces" ;
+    gap: 15px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+/* images */
+
+.imgValue, .imgHeat, .imgFurnaces{
+    width: 100%;
+}
+
+.imgValue{
+    grid-area: imgValue;
+}
+
+.imgHeat{
+    grid-area: imgHeat;
+
+}
+
+.imgFurnaces{
+    grid-area: imgFurnaces;
+
+}
+
+/* text */ 
+.textHeat, .textFurnaces, .textValue{
+    width: 100%;
+}
+
+.h2HelpfulHeating{
+    grid-area: h2HelpfulHeating;
+}
+
+.textValue{
+    grid-area: textValue;
+
+}
+
+.textHeat{
+    grid-area: textHeat;
+
+}
+
+.textFurnaces{
+    grid-area: textFurnaces;
+
+}
+
+/* links*/ 
+
+.linkValue{
+    grid-area: linkValue;
+}
+
+.linkHeat{
+    grid-area: linkHeat;
+}
+
+.linkFurnaces{
+    grid-area: linkFurnaces;
+}
+}
